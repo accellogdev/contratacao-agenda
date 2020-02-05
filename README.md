@@ -6,22 +6,73 @@ Projeto de teste para vaga de emprego.
 
 ## Projeto
 
-A agenda é um dos principais instrumentos de trabalhos de muitos negócios. Como exemplo, temos consultórios médicos, odontológicos, entre muitos outros serviços que são prestados.
+O tempo é um dos vilões entre as pessoas. Para isto, um bom controle das tarefas a serem executadas pode ajudar a muitos a cumprir seus objetivos, suas entregas, a realizar seus sonhos.
 
-Crie uma lista de tarefas por usuário. Neste projeto vamos precisar:
+Devido a isto, vamos criar uma lista de tarefas a serem controladas. Neste projeto vamos precisar:
 
-* Registro de usuário com perfil.
-* Login e senha.
-* Esqueci minha senha.
-* Alterar senha.
-* Alterar perfil.
-* Logout.
-* Cancelar conta.
-* Tela inicial com listagem de tarefas ordenadas por data de início.
+* Tela inicial com listagem de tarefas ordenadas por data de término.
 * Cadastro de uma nova tarefa.
 * Editar uma tarefa cadastrada.
 * Excluir uma tarefa cadastrada.
 * Marcar tarefa como concluída.
+
+### Funcionalidades adicionais (Tarefas por usuário)
+
+* Registro de usuário.
+* Login e senha.
+* Esqueci minha senha.
+* Alterar senha.
+* Logout.
+
+## Funcionalidades
+
+### Tela inicial com listagem de tarefas
+
+Uma tela de listagem das tarefas a serem executadas. Precisamos listar na tela o título da tarefa, a data para finalizar a tarefa, o status da tarefa, um botão para concluir tarefa e um botão para excluir uma tarefa. Apresentar apenas tarefas abertas por padrão.
+Ordenar as tarefas por data de entrega, ou seja, as primeiras entregas a serem feitas devem vir primeiro.
+
+### Cadastro de uma nova tarefa
+
+Na tela de listagem de tarefas, precisamos de um botão para incluir uma nova tarefa. Ao clicar neste botão o sistema deve direcionar o usuário para um formulário de cadastro de uma nova tarefa. Este formulário deve apresentar os seguintes campos:
+
+* Título da tarefa.
+* Descrição da tarefa.
+* Data e hora de fim da tarefa.
+
+Ao clicar em salvar o sistema deve gravar o registro no banco de dados e retornar para a tela de listagem de tarefas.
+
+### Editar uma tarefa cadastrada
+
+Ao clicar em alterar uma tarefa, o sistema deve direcionar o usuário para um formulário de edição. Informar os novos dados e salvar registro.
+
+### Excluir uma tarefa cadastrada
+
+Ao clicar no botão excluir tarefa, o sistema deve remover a tarefa do banco de dados e retornar para a tela de listagem de tarefas.
+
+### Marcar tarefa como concluída
+
+Ao clicar no botão concluir tarefa, o sistema deve alterar o status da tarefa como concluída e retornar a tela de listagem de tarefas.
+
+## ENTREGA
+
+* O layout é por conta do candidato.
+* Qualquer dúvida pode entrar em contato com Gustavo da Accellog.
+* Subir projeto no GitHub e encaminhar para Gustavo da Accellog o link do projeto.
+
+## AVALIAÇÃO
+
+* Entrega no prazo mesmo que seja parcial (não serão aceitos entregas fora do prazo).
+* Apresentação do software (apresentar a entrega rodando na máquina do usuário - remoto). Como fez o projeto, como organizou o código, que bibliotecas utilizou.
+* Aprendizado (em conversa com o candidato, como o período de aprendizado).
+* Organização do código (avaliação feita depois da apresentação).
+
+## Funcionalidades adicionais
+
+Estas funcionalidades não são obrigatórias.
+
+### Objetivo
+
+Criar um controle de usuário de forma que cada usuário possa enchergar apenas as suas tarefas.
 
 ### Registro de usuário com perfil
 
@@ -29,15 +80,12 @@ Ao acessar a tela inicial do sistema, o usuário irá visualizar uma tela de log
 
 * E-mail (não pode se duplicar e será utilizado como login).
 * Senha (precisa ser criptografada).
-* Nome completo.
-* Data de nascimento.
-* Cidade / Estado onde reside.
 
-Ao se cadastrar e enviar, ele precisa receber uma mensagem informando que está registrado e ser direcionado para a tela principal onde irá fazer login no sistema.
+Ao se cadastrar e enviar, ele precisa receber uma mensagem na tela informando que está registrado e ser direcionado para a tela principal onde irá fazer login no sistema.
 
 ### Login e senha
 
-Ao informar usuário (e-mail) e senha corretamente, o usuário deve ser direcionado para a tela inicial. Se informar um usuário não existe ou se informar um usuário e senha incorretos, ele deve receber uma mensagem de "Login inválido" e retornar para a tela inicial.
+Ao informar usuário (e-mail) e senha corretamente, o usuário deve ser direcionado para a tela inicial. Se informar um usuário não existente ou se informar um usuário e senha incorretos, ele deve receber uma mensagem de "Login inválido" e retornar para a tela inicial.
 
 ### Esqueci minha senha
 
@@ -62,50 +110,3 @@ Após alterar os dados de perfil, clicar no botão salvar para aplicar as altera
 ### Logout
 
 Ao clicar no link "logout" o sistema deve ser fechado e precisa retornar para a tela de login.
-
-### Cancelar conta
-
-O sistema deve apresentar uma opção para cancelar a conta do usuário. Ao clicar neste item, o usuário deve ser marcado como Inativo e com isto não deve conseguir logar no sistema. Apenas usuários ativos podem logar no sistema.
-
-### Tela inicial com listagem de tarefas ordenadas por data de início
-
-Ao logar no sistema, o usuário deve ser direcionado para a tela inicial. Nesta tela, ele precisa visualizar uma litagem de todas as tarefas registradas e abertas (não concluídas). Estas tarefas devem estar ordenadas por dta de início e precisam apresentar as seguintes informações.
-
-* Identificador da tarefa (#).
-* Título da tarefa.
-* Data e hora de início da tarefa.
-* Data e hora de fim da tarefa.
-* Status da tarefa.
-* Botão de ação para concluir tarefa.
-* Botão de ação para editar tarefa.
-* Botão de ação para excluir tarefa.
-
-### Cadastro de uma nova tarefa
-
-Na tela de listagem de tarefas, precisamos de um botão para incluir uma nova tarefa. Ao clicar neste botão o sistema deve direcionar o usuário para um formulário de cadastro de uma nova tarefa. Este formulário deve apresentar os seguintes campos:
-
-* Título da tarefa.
-* Descrição da tarefa.
-* Data e hora de início da tarefa.
-* Data e hora de fim da tarefa.
-
-Ao clicar em salvar o sistema deve gravar o registro no banco de dados e retornar para a tela de listagem de tarefas (tela inicial do sistema quando o usuário está logado).
-
-### Editar uma tarefa cadastrada
-
-Ao clicar em alterar uma tarefa, o sistema deve direcionar o usuário para um formulário de edição. Informar os novos dados e salvar registro.
-
-### Excluir uma tarefa cadastrada
-
-Ao clicar no botão excluir tarefa, o sistema deve remover a tarefa do banco de dados e retornar para a tela de listagem de tarefas.
-
-### Marcar tarefa como concluída
-
-Ao clicar no botão concluir tarefa, o sistema deve alterar o status da tarefa como concluída e retornar a tela de listagem de tarefas.
-
-## Observação
-
-* Um usuário pode apenas visualizar as tarefas que foram cadastradas por ele, ou seja, não pode visualizar as tarefas de outro usuário.
-* O layout é por conta do candidato.
-* Qualquer dúvida pode entrar em contato com Gustavo da Accellog.
-* Subir projeto no GitHub e encaminhar para Gustavo da Accellog o link do projeto.
