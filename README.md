@@ -72,7 +72,7 @@ Estas funcionalidades não são obrigatórias.
 
 ### Objetivo
 
-Criar um controle de usuário de forma que cada usuário possa enchergar apenas as suas tarefas.
+Criar um controle de usuário de forma que cada usuário tenha acesso apenas as suas tarefas.
 
 ### Registro de usuário com perfil
 
